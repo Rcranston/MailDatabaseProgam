@@ -1,0 +1,23 @@
+﻿<Window x:Name="winDBWindow" x:Class="CSCDWPF.DBWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFMenusAndToolBar"
+        mc:Ignorable="d"
+        Title="New Database Entry" Height="221.325" Width="446.81">
+    <Grid Margin="0,0,2,0">
+
+
+        <TextBox x:Name="USRLname" HorizontalAlignment="Left" Height="23" Margin="94,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" SpellCheck.IsEnabled="True"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Height="26" Width="79"/>
+        <TextBox x:Name="USRFname" HorizontalAlignment="Left" Height="23" Margin="94,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" SpellCheck.IsEnabled="True"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Height="26" Width="79"/>
+        <TextBox x:Name="USRemail" HorizontalAlignment="Left" Height="23" Margin="94,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" SpellCheck.IsEnabled="True"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Height="26" Width="79"/>
+
+
+        <Button x:Name="SubButtin" Content="Submit" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" Width="138" Height="23" Click="SubButtin_Click"/>
+        <CheckBox x:Name="USRprev" Content="Receive a Holiday Email from the person last year?" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Height="23" Width="279"/>
+    </Grid>
+</Window>

@@ -1,0 +1,36 @@
+﻿<Window x:Name="winESWindow" x:Class="CSCDWPF.EmailSender"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFMenusAndToolBar"
+        mc:Ignorable="d"
+        Title="Email Sender" Height="452.472" Width="826.727">
+    <Grid Margin="2,2,2,2">
+        <ComboBox x:Name="EMToSelct" HorizontalAlignment="Left" Margin="42,52,0,0" VerticalAlignment="Top" Width="330" IsEditable="True" AllowDrop="True" Text="Select One">
+            <ComboBoxItem Content="All"/>
+            <ComboBoxItem Content="Those Who thought abot you Last Year"/>
+
+        </ComboBox>
+        <Label x:Name="ToLable" Content="To:" HorizontalAlignment="Left" Height="28" Margin="10,50,0,0" VerticalAlignment="Top" Width="27"/>
+        <Label x:Name="EmailLable" Content="Email Credentials:" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="EMuser" HorizontalAlignment="Left" Height="24" Margin="114,10,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="258"/>
+        <TextBox x:Name="EMpass" HorizontalAlignment="Left" Height="24" Margin="377,10,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="258"/>
+        <Button x:Name="EMSend" Content="Send" Click ="EMSend_Click" HorizontalAlignment="Left" Height="24" Margin="656,10,0,0" VerticalAlignment="Top" Width="149"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="459,48,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="EMattatchment" HorizontalAlignment="Left" Height="22" Margin="94,117,0,0" TextWrapping="Wrap" Text="Want to attatch a document? Ender the full path or just leave blank" VerticalAlignment="Top" Width="711"/>
+        <Label Content="Attatchments:" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="EMmessage" HorizontalAlignment="Left" Height="249" Margin="42,144,0,0" TextWrapping="Wrap" Text="Happy Holidays! &#xD;&#xA;&#xD;&#xA;See you next year!" VerticalAlignment="Top" Width="751"/>
+        <Label Content="Header:" HorizontalAlignment="Left" Height="24" Margin="10,83,0,0" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="EMHead" HorizontalAlignment="Left" Height="24" Margin="66,83,0,0" TextWrapping="Wrap" Text="Happy Holidays" VerticalAlignment="Top" Width="739"/>
+        <ComboBox x:Name="EMservice" HorizontalAlignment="Left" Margin="454,50,0,0" VerticalAlignment="Top" Width="353" IsEditable="True" AllowDrop="True" Text="Select One">
+            <ComboBoxItem Content="Gmail"/>
+            <ComboBoxItem Content="Office365"/>
+            <ComboBoxItem Content="Outlook"/>
+            <ComboBoxItem Content="ICloud"/>
+
+        </ComboBox>
+        <Label Content="MailService:" HorizontalAlignment="Left" Height="28" Margin="377,46,0,0" VerticalAlignment="Top" Width="77"/>
+
+    </Grid>
+</Window>
